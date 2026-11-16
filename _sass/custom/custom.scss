@@ -1,0 +1,51 @@
+html {
+  /* Mitigation for bug with anchor tags langing at the wrong position for long pages
+   Works most of the time.
+   https://github.com/just-the-docs/just-the-docs/issues/1574 */
+  scroll-behavior: auto !important;
+}
+
+/* Fonts: relative to the compiled stylesheet (assets/css/), so they load at any baseurl. */
+@font-face {
+  font-family: 'Alegreya';
+  src: local('Alegreya Regular'), url('../../fonts/static/Alegreya-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: local('Alegreya Bold'), url('../../fonts/static/Alegreya-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: local('Alegreya Italic'), url('../../fonts/static/Alegreya-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: local('Alegreya Bold Italic'), url('../../fonts/static/Alegreya-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* The redesign. Each partial is one part of the site; _jtd.scss fits Just the Docs' own markup to it. */
+@import "./base";
+@import "./header";
+@import "./components";
+@import "./rules";
+@import "./notices";
+@import "./dice";
+@import "./builder";
+@import "./responsive";
+@import "./jtd";
+@import "./print";

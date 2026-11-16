@@ -1,0 +1,28 @@
+# The header's menus. Each link is a site path (or a full URL) and its text.
+# The sidebar still comes from each page's parent / nav_order front matter.
+#
+# `sections` are the paths a menu covers: the header marks the menu on any page under one of them. If a page matches
+# more than one menu, the longer matching path wins.
+
+menus:
+  - title: Rules
+    href: /rules/introduction/
+    sections: [/rules/]
+    links:
+      - [Introduction, /rules/introduction/]
+      - [Overview & Principles, /rules/overview-and-principles/]
+      - [Core Rules, /rules/core-rules/]
+      - [Character Creation, /rules/character-creation/]
+      - [Procedures, /rules/procedures/]
+      - [Gear Packages, /rules/gear-packages/]
+      - [Marketplace, /rules/marketplace/]
+      - [Spellbooks, /rules/spellbooks/]
+  - title: About
+    href: /about-this-fork/
+    sections: [/about-this-fork/]
+    links:
+      - [About this fork, /about-this-fork/]
+
+
+
+
